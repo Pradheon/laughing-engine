@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;
-charset=us-ascii">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <title>Laughing Engine</title>
+    <script>
+        // start the speech recognition and send the text captured to the "SendToBrain" function.
+        
+
+        // function to use Ajax to send and recognized speech to the brain.
+        function SendToBrain(message) {
+            url = "https://www.securetransaction.uk/aibaas/brigitkylie/engen/jsontest2.php";
+            fields = "?message="+message;
+
+            var xhttp;
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (xhttp.readystate == 4 && xhttp.status == 200) {
+                    handleresponse(xhttp);
+                }
+            };
+            try { 
+                xhttp.open("GET", url+fields, true);
+            }
+            catch {
+
+            }
+        }
+    </script>
 </head>
 <body>
-<div></div>
+    
 </body>
 </html>
