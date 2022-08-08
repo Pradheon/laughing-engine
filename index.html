@@ -8,7 +8,16 @@
     <title>Laughing Engine</title>
     <script>
         // start the speech recognition and send the text captured to the "SendToBrain" function.
-        
+        var recognition = new webkitSpeechRecognition();
+        recognition.language = "en-GB"
+        recognition.continuous = false;
+        recognition.interimResults = false;
+
+        recognition.onResult = function(event) {
+            console.log("recognition.result called");
+            captureText = event.results[0][0].transcript;
+            SendToBrain(captureText);
+        };
 
         // function to use Ajax to send and recognized speech to the brain.
         function SendToBrain(message) {
@@ -24,14 +33,25 @@
             };
             try { 
                 xhttp.open("GET", url+fields, true);
+                xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhttp.send(fields);
             }
-            catch {
+            catch(error) {
+                console.log(error.message);
+            }
+        }
 
-            }
+        // function to speak the response from the brain.
+        function handleResponse(xhttp) {
+            reply = xhttp.responseText;
+            sayText(reply, 4, 1, 4);
         }
     </script>
 </head>
 <body>
-    
+    <div>
+        <script type="text/javascript" src="//vhss.oddcast.com/vhost_embed_functions_v4.php?acc=8536177&js=0"></script>
+        <script type="text/javascript">AC_VHost_Embed(8536177, 600, 800, "", 1, 1, 2751296, 0, 1, 0, "CbiQmWLkSZX1kbV7hfbLr49RltDVpaB6", 0, 0);</script>
+    </div>
 </body>
 </html>
