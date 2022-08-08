@@ -22,12 +22,16 @@ v0.1.5
 ## Team & Collaborators
 **Joshan Rai**
 - [Profile](https://example.com/)
+<br>
 **Michael Mcginnis**
 - [Profile](https://example.com/)
+<br>
 **Alexander Ochoa**
 - [Profile](https://example.com/)
+<br>
 **Tania Peitzker**
 - [Profile](https://example.com/)
+<br>
 **Darren Lee**
 - [Profile](https://example.com/)
 
