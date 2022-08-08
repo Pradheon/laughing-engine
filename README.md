@@ -21,10 +21,15 @@ v0.1.5
 
 ## Team & Collaborators
 **Joshan Rai**
+- [Profile](https://example.com/)
 **Michael Mcginnis**
+- [Profile](https://example.com/)
 **Alexander Ochoa**
+- [Profile](https://example.com/)
 **Tania Peitzker**
+- [Profile](https://example.com/)
 **Darren Lee**
+- [Profile](https://example.com/)
 
 ## Copyright
 This project is licensed under the terms of the MIT license.
