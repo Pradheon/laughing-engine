@@ -19,15 +19,6 @@ h1, p {
     padding: 20px;
 }
 
-div {
-    height: 100px;
-    overflow: auto;
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    left: 0;
-}
-
 ul {
     margin: 0;
 }
