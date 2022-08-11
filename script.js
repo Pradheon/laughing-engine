@@ -10,6 +10,8 @@ recognition.language = "en-GB";
 recognition.continuous = false;
 recognition.interimResults = false;
 
+//var diagnostic = document.querySelector('.output');
+
 document.body.onload = function () {
     recognition.start();
     console.log("Ready to recieve a command.");
@@ -31,7 +33,7 @@ recognition.onResult = function (event) {
 recognition.onSpeechEnd = function () {
     recognition.stop();
 }
-
+/*
 recognition.onnomatch = (event) => {
     diagnostic.textContent = "I didn't quite catch that, could you repeat that?";
 }
@@ -39,7 +41,7 @@ recognition.onnomatch = (event) => {
 recognition.onerror = (event) => {
     diagnostic.textContent = `Error occurred in recognition: ${event.error}`;
 }
-
+*/
 
 // function to use Ajax to send recognized speech to the brain.
 function SendToBrain(message) {
