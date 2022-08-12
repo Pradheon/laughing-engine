@@ -1,16 +1,13 @@
-// Chrome support for speech recognition with prefixed properties
-const SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
-const SpeechGrammarList = window.SpeechGrammarList || webkitSpeechGrammarList;
-const SpeechRecognitionEvent = window.SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
-
+var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
 
 // start the speech recognition and send the text captured to the "sendToBrain" function.
-var recognition = new SpeechRecognition();
+//var recognition = new SpeechRecognition();
+const recognition = new webkitSpeechRecognition();
 recognition.lang = "en-US";
 recognition.continuous = false;
 recognition.interimResults = false;
 
-document.body.onclick = function() {
+window.onclick = function() {
     recognition.start();
     console.log("Speech recognition started. Awaiting command...");
 }
