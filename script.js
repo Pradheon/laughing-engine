@@ -5,7 +5,7 @@ const SpeechRecognitionEvent = window.SpeechRecognitionEvent || webkitSpeechReco
 
 
 // start the speech recognition and send the text captured to the "sendToBrain" function.
-var recognition = new webkitSpeechRecognition();
+var recognition = new SpeechRecognition();
 recognition.lang = "en-US";
 recognition.continuous = false;
 recognition.interimResults = false;
