@@ -29,10 +29,11 @@ recognition.onResult = function (event) {
     captureText = event.results[0][0].transcript;
     SendToBrain(captureText);
 };
-
+/*
 recognition.onSpeechEnd = function () {
     recognition.stop();
 }
+*/
 /*
 recognition.onnomatch = function(event) {
   diagnostic.textContent = "I didn't recognise that color.";
