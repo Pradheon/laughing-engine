@@ -17,6 +17,7 @@ document.body.onclick = function() {
 
 recognition.onResult = function (event) {
     var capturedText = event.results[0][0].transcript;
+    console.log(capturedText);
     sendToBrain(capturedText);
     console.log("Confidence: " + event.results[0][0].confidence);
 };
