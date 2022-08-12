@@ -26,8 +26,8 @@ recognition.onSpeechStart = function() {
 
 recognition.onResult = function (event) {
     console.log("recognition.result called");
-    captureText = event.results[0][0].transcript;
-    SendToBrain(captureText);
+    capturedText = event.results[0][0].transcript;
+    SendToBrain(capturedText);
 };
 /*
 recognition.onSpeechEnd = function () {
