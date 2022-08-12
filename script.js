@@ -12,7 +12,7 @@ recognition.interimResults = false;
 
 //var diagnostic = document.querySelector('.output');
 
-document.onload = function () {
+window.onload = function () {
     recognition.start();
     console.log("Ready to recieve a command.");
 }
