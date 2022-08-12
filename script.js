@@ -4,7 +4,7 @@ const SpeechGrammarList = window.SpeechGrammarList || webkitSpeechGrammarList;
 const SpeechRecognitionEvent = window.SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
 
 
-// start the speech recognition and send the text captured to the "SendToBrain" function.
+// start the speech recognition and send the text captured to the "sendToBrain" function.
 var recognition = new webkitSpeechRecognition();
 recognition.lang = "en-US";
 recognition.continuous = false;
@@ -23,7 +23,7 @@ recognition.onResult = function (event) {
 };
 
 // function to use Ajax to send recognized speech to the brain.
-function SendToBrain(msg) {
+function sendToBrain(msg) {
     url = "https://www.securetransaction.uk/aibaas/brigitkylie/engen/jsontest2.php";
     fields = "?msg="+msg;
 
