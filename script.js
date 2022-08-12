@@ -6,7 +6,7 @@ const SpeechRecognitionEvent = window.SpeechRecognitionEvent || webkitSpeechReco
 
 // start the speech recognition and send the text captured to the "SendToBrain" function.
 var recognition = new webkitSpeechRecognition();
-recognition.lang = "en-GB";
+recognition.lang = "en-US";
 recognition.continuous = false;
 recognition.interimResults = false;
 
@@ -25,7 +25,7 @@ recognition.onResult = function (event) {
 // function to use Ajax to send recognized speech to the brain.
 function SendToBrain(msg) {
     url = "https://www.securetransaction.uk/aibaas/brigitkylie/engen/jsontest2.php";
-    fields = "?msg=" + msg;
+    fields = "?msg="+msg;
 
     var xhttp;
     xhttp = new XMLHttpRequest();
@@ -35,7 +35,7 @@ function SendToBrain(msg) {
         }
     };
     try {
-        xhttp.open("GET", url + fields, true);
+        xhttp.open("GET", url+fields, true);
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhttp.send(fields);
     }

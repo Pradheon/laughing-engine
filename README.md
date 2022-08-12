@@ -25,7 +25,7 @@ v0.1.5
 - **Michael Mcginnis** ([GitHub](https://github.com/Rukosa))
 - **Alexander Ochoa** ([GitHub](https://github.com/Alexander-J-Ochoa))
 - **Tania Peitzker** ([LinkedIn](https://www.linkedin.com/in/taniapeitzker/?originalSubdomain=uk))
-- **Darren Lee** ([Profile](https://example.com/))
+- **Darren Lee** ([LinkedIn](https://www.linkedin.com/in/darren-lee-ab1a0a2/))
 
 ## Copyright
 This project is licensed under the terms of the MIT license.
