@@ -10,39 +10,16 @@ recognition.lang = "en-GB";
 recognition.continuous = false;
 recognition.interimResults = false;
 
-//var diagnostic = document.querySelector('.output');
-
-window.onload = function () {
+document.body.onclick = function() {
     recognition.start();
-    console.log("Ready to recieve a command.");
+    console.log("Speech recognition started. Awaiting command...");
 }
-
-/*
-recognition.onSpeechStart = function() {
-    recognition.start();
-    console.log("Speech recognition ready to recieve query.")
-}
-*/
 
 recognition.onResult = function (event) {
-    console.log("recognition.result called");
-    capturedText = event.results[0][0].transcript;
-    SendToBrain(capturedText);
+    var capturedText = event.results[0][0].transcript;
+    sendToBrain(capturedText);
+    console.log("Confidence: " + event.results[0][0].confidence);
 };
-/*
-recognition.onSpeechEnd = function () {
-    recognition.stop();
-}
-*/
-/*
-recognition.onnomatch = function(event) {
-  diagnostic.textContent = "I didn't recognise that color.";
-}
-
-recognition.onerror = function(event) {
-  diagnostic.textContent = 'Error occurred in recognition: ' + event.error;
-}
-*/
 
 // function to use Ajax to send recognized speech to the brain.
 function SendToBrain(message) {
