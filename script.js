@@ -40,7 +40,7 @@ function sendToBrain(msg) {
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            handleresponse(xhttp);
+            handleResponse(xhttp);
         }
     };
     try {
