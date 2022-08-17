@@ -10,10 +10,12 @@ recognition.lang = "en-US";
 recognition.continuous = false;
 recognition.interimResults = false;
 
+/*
 document.body.onclick = function() {
     recognition.start();
     console.log("Speech recognition started. Awaiting command...");
 }
+*/
 
 // In the event the above method does not function, use the below method provided by Darren
 $(document).ready(function() {
