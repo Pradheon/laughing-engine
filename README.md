@@ -15,6 +15,7 @@ v0.1.5
 ## Previews
 <img width="50%" alt="Laughing Engine AI" src="https://cdn.discordapp.com/attachments/730143569448403076/1009603811570098216/Screenshot_2022-08-17_162445.jpg"/>
 Click the image below to watch a preview video on YouTube
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=UsFdgl9fI5M" target="_blank"><img src="http://img.youtube.com/vi/UsFdgl9fI5M/0.jpg" alt="Laughing Engine AI" width="50%"/></a>
 
 ## Built With
