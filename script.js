@@ -15,9 +15,18 @@ document.body.onclick = function() {
     console.log("Speech recognition started. Awaiting command...");
 }
 
+// In the event the above method does not function, use the below method provided by Darren
+/* 
+$(document).ready(function() {
+    $("button").click(function() {
+        recognition.start();
+    });
+});
+*/
+
 recognition.onResult = function (event) {
     var capturedText = event.results[0][0].transcript;
-    console.log(capturedText);
+    console.log("Captured Text: " + capturedText);
     sendToBrain(capturedText);
     console.log("Confidence: " + event.results[0][0].confidence);
 };
