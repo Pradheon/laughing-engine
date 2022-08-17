@@ -12,8 +12,9 @@ v0.1.5
 - [SitePal](https://www.sitepal.com/ "SitePal")
 - [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API "Web Speech API")
 
-## Screenshots
-<img width="50%" alt="Laughing Engine AI" src="https://cdn.discordapp.com/attachments/730143569448403076/1007475161005576192/unknown.png"/>
+## Previews
+<img width="50%" alt="Laughing Engine AI" src="https://cdn.discordapp.com/attachments/730143569448403076/1009603811570098216/Screenshot_2022-08-17_162445.jpg"/>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UsFdgl9fI5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Built With
 - HTML5
