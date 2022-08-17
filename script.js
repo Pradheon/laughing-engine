@@ -21,10 +21,12 @@ document.body.onclick = function() {
 $(document).ready(function() {
     $("button").click(function() {
         recognition.start();
+        console.log("recognition.start() called");
     });
 });
 
 recognition.onResult = function (event) {
+    console.log("recognition.onResult called")
     var capturedText = event.results[0][0].transcript;
     console.log("Captured Text: " + capturedText);
     sendToBrain(capturedText);
