@@ -14,7 +14,9 @@ v0.1.5
 
 ## Previews
 <img width="50%" alt="Laughing Engine AI" src="https://cdn.discordapp.com/attachments/730143569448403076/1009603811570098216/Screenshot_2022-08-17_162445.jpg"/>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UsFdgl9fI5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://youtu.be/UsFdgl9fI5M" target="_blank">
+ <img src="http://img.youtube.com/vi/nTQUwghvy5Q/mqdefault.jpg" alt="Watch the video" width="240" height="180" border="10" />
+</a>
 
 ## Built With
 - HTML5
