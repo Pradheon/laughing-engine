@@ -25,7 +25,7 @@ $(document).ready(function() {
     });
 });
 
-recognition.onResult = function (event) {
+recognition.onresult = function (event) {
     console.log("recognition.onResult called")
     var capturedText = event.results[0][0].transcript;
     console.log("Captured Text: " + capturedText);
@@ -42,13 +42,14 @@ function sendToBrain(msg) {
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            handleResponse(xhttp);
+            handleresponse(xhttp);
         }
     };
     try {
         xhttp.open("GET", url+fields, true);
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhttp.send(fields);
+        console.log("Sending message to brain");
     }
     catch (err) {
         console.log(err.message);
@@ -56,7 +57,8 @@ function sendToBrain(msg) {
 }
 
 // function to speak the response from the brain.
-function handleResponse(xhttp) {
+function handleresponse(xhttp) {
     reply = xhttp.responseText;
     sayText(reply, 4, 1, 4);
+    console.log("Handling response from brain");
 }
