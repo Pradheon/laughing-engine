@@ -24,13 +24,13 @@ recognition.onResult = function (event) {
 
 // function to use Ajax to send recognized speech to the brain.
 function sendToBrain(msg) {
-    url = "https://www.securetransaction.uk/aibaas/brigitkylie/engen/jsontest2.php";
+    url = "https://www.securetransaction.uk/aibaas/birgitkylie/engen/jsontest2.php";
     fields = "?msg="+msg;
 
     var xhttp;
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if (xhttp.readystate == 4 && xhttp.status == 200) {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
             handleresponse(xhttp);
         }
     };
