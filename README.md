@@ -14,7 +14,7 @@ v0.1.5
 
 ## Previews
 <img width="50%" alt="Laughing Engine AI" src="https://cdn.discordapp.com/attachments/730143569448403076/1009603811570098216/Screenshot_2022-08-17_162445.jpg"/>
-[![Watch a Preview](https://img.youtube.com/vi/VID/0.jpg)](https://youtu.be/UsFdgl9fI5M)
+[<img src="https://cdn.discordapp.com/attachments/730143569448403076/1009608406027477082/le-convoai.png" width="50%">](https://youtu.be/UsFdgl9fI5M "Laughing Engine Conversation AI")
 
 ## Built With
 - HTML5
