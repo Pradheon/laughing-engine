@@ -11,6 +11,7 @@ recognition.continuous = false;
 recognition.interimResults = false;
 
 document.body.onclick = function() {
+    sayText("Hello, I am Catherine the cat. Ask me anything and I will try my best to answer your question with the help of my friend Kylie.", 4, 1, 4);
     recognition.start();
     console.log("Speech recognition started. Awaiting command...");
 }
