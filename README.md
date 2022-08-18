@@ -1,13 +1,13 @@
-# laughing-engine
+# Laughing Engine
 
 ### Description
 Bespoke avatar in Sitepal connected to DREAMOC POP3.
 
 ### Version
-v0.1.5
+v1.7.5
 
 ## Links
-- [Laughing Engine](https://pradheon.github.io/laughing-engine/ "Laughing Engine")
+- [Laughing Engine](https://pradheon.github.io/laughing-engine/ "Laughing Engine") (Project Website)
 - [Dreamoc POP3](https://www.realfiction.com/solutions/dreamoc-pop-3 "Dreamoc POP3")
 - [SitePal](https://www.sitepal.com/ "SitePal")
 - [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API "Web Speech API")
