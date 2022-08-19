@@ -17,14 +17,12 @@ document.body.onclick = function() {
 }
 
 // In the event the above method does not function, use the below method provided by Darren
-/*
 $(document).ready(function() {
     $("button").click(function() {
         recognition.start();
         console.log("recognition.start() called");
     });
 });
-*/
 
 recognition.onresult = function (event) {
     console.log("recognition.onResult called")
